@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import logoMarca2 from './images/logoMarca2.png'
 import logoMarca from './images/logoMarca.svg'
 import thaitoo from './images/thaitoo.jpg'
 import estudio1 from './images/estudio1.png'
@@ -63,7 +64,7 @@ function App() {
       <header className="navbar">
         <div className="navbar-logo">
           <div className="logo-placeholder">
-            <img src={logoMarca} alt="Logo Thaitoo" className="logo-img" />
+            <img src={logoMarca2} alt="Logo Thaitoo" className="logo-img" />
           </div>
         </div>
         <button className="nav-button" onClick={() => window.open('https://wa.me/55SEUNUMERO?text=Olá! Gostaria de agendar uma tatuagem.', '_blank')}
