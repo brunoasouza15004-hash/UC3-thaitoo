@@ -1,0 +1,789 @@
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden; 
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa; 
+}
+
+/* ==========================================================================
+   2. NAVBAR
+   ========================================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 6%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button .arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.nav-button:active {
+  transform: scale(0.96) translateY(0);
+}
+
+/* ==========================================================================
+   3. SEÇÃO SOBRE MIM (SEÇÃO 2)
+   ========================================================================== */
+.about-section {
+  width: 100%;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  background-color: #fafafa; 
+}
+
+.about-card {
+  display: flex;
+  background-color: #ffffff;
+  max-width: 1100px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 50px;
+  gap: 50px;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06); 
+  box-sizing: border-box;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.about-logo {
+  height: 45px;
+  width: auto;
+  align-self: flex-start;
+}
+
+.about-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.about-greeting {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #d31c1c 0%, #b01212 100%);
+  width: 15rem;
+  margin-left: 20rem;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(211, 28, 28, 0.3);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(211, 28, 28, 0.5);
+  background: linear-gradient(135deg, #e62222 0%, #bd1414 100%);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   4. SEÇÃO CONHEÇA NOSSO ESPAÇO (SEÇÃO 3)
+   ========================================================================== */
+.space-section {
+  width: 100%; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background-color: #ffffff; 
+}
+
+.space-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.space-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c92323;
+  text-align: left;
+  margin: 0;
+}
+
+.space-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.01);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.item-large {
+  height: 380px;
+}
+
+.gallery-row-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gallery-row-bottom .gallery-item {
+  height: 340px;
+}
+
+.space-cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   5. SEÇÃO TRABALHOS & CARROSSEIS REAL (SEÇÃO 4)
+   ========================================================================== */
+.portfolio-section {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa; 
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 40px; 
+  display: flex;
+  flex-direction: column;
+  gap: 80px; 
+  box-sizing: border-box;
+}
+
+.portfolio-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portfolio-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c92323; 
+  margin: 0;
+}
+
+.dots-indicator {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #c92323;
+  line-height: 0.5;
+  letter-spacing: 2px;
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.arrow-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #222222;
+  transform: scale(1.05);
+}
+
+/* ESTRUTURA MÁSCARA DO CARROSSEL */
+.carousel-container {
+  width: 100%;
+  overflow: hidden; /* Esconde as fotos que saem da borda */
+  padding: 10px 0;
+}
+
+/* TRILHO DE MOVIMENTAÇÃO */
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ELEMENTOS FILHOS DO TRILHO */
+.portfolio-item-wrapper {
+  flex: 0 0 33.333%; /* 3 itens por tela no desktop */
+  padding: 0 12px;   /* Cria o espaçamento (gap) entre os cards */
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  aspect-ratio: 3 / 4; 
+  width: 100%;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flash-card {
+  background-color: #ffffff;
+  padding: 12px; 
+  box-sizing: border-box;
+}
+
+.flash-card img {
+  border-radius: 12px;
+}
+
+.portfolio-cta-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.portfolio-cta-btn {
+  background: linear-gradient(135deg, #d31c1c 0%, #b01212 100%);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(211, 28, 28, 0.2);
+  transition: all 0.3s ease;
+}
+
+.portfolio-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(211, 28, 28, 0.4);
+}
+
+/* ==========================================================================
+   6. RESPONSIVIDADE (MOBILE E TABLETS)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .about-card {
+    flex-direction: column-reverse;
+    padding: 30px;
+    gap: 35px;
+  }
+  
+  .about-content {
+    align-items: center;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+
+  .about-header-block {
+    align-items: center;
+  }
+
+  .about-logo {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .space-section, .portfolio-wrapper {
+    padding: 60px 20px;
+  }
+
+  .space-title {
+    text-align: center;
+  }
+
+  .item-large {
+    height: 240px;
+  }
+
+  .gallery-row-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-row-bottom .gallery-item {
+    height: 260px;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Ajuste dinâmico para o carrossel em telas mobile (1 por vez) */
+  .portfolio-item-wrapper {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  
+  .portfolio-cta-wrapper {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   7. SEÇÃO LOCALIZAÇÃO (SEÇÃO 5)
+   ========================================================================== */
+.location-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px 120px 40px; /* Margem generosa ao fim da página */
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.location-card {
+  display: flex;
+  background-color: #ffffff;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 45px;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12); 
+  box-sizing: border-box;
+}
+
+/* Coluna Esquerda */
+.location-info {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.location-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.location-logo {
+  height: 45px;
+  width: auto;
+  align-self: flex-start;
+}
+
+.location-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c92323; /* Vermelho padrão */
+  margin: 0;
+}
+
+.location-address {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+}
+
+.address-pin {
+  color: #c92323;
+  margin-right: 4px;
+}
+
+/* Mini Mapa */
+.map-wrapper {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Área do Botão do Google Maps */
+.maps-action-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.maps-redirect-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.maps-redirect-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.maps-icon {
+  height: 36px;
+  width: auto;
+}
+
+/* Coluna Direita (Imagem e CTA) */
+.location-image-container {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+  width: 100%;
+}
+
+.location-side-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.location-cta-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* --- Responsividade Seção 5 --- */
+@media (max-width: 850px) {
+  .location-card {
+    flex-direction: column;
+    padding: 30px;
+    gap: 35px;
+  }
+
+  .location-info, .location-image-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .location-header-block {
+    align-items: center;
+  }
+
+  .map-wrapper {
+    max-width: 1000px;
+  }
+
+  .location-cta-wrapper {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   8. STYLES DO FOOTER
+   ========================================================================== */
+/* ==========================================================================
+   6. STYLES DO FOOTER
+   ========================================================================== */
+.footer-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 0 40px 0;
+  font-family: sans-serif; /* Ajuste para a fonte principal do seu projeto */
+  width: 100%;
+}
+
+/* Linha vermelha fina com degradê sutil nas pontas igual ao layout */
+.footer-divider-line {
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(218,34,34,1) 15%, rgba(218,34,34,1) 85%, rgba(255,0,0,0) 100%);
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Bloco da Marca */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo-img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.footer-brand-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer-slogan {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Bloco das Redes Sociais */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-socials h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+/* Ícones circulares cinza escuro que mudam de cor no hover */
+.social-icon-btn {
+  width: 42px;
+  height: 42px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icon-btn:hover {
+  background-color: #da2222; /* Vermelho correspondente ao destaque */
+  transform: translateY(-2px);
+}
+
+/* Linha inferior de direitos autorais */
+.footer-copyright {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 0 40px;
+  color: #555555;
+  font-size: 0.85rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 24px;
+  }
+  
+  .footer-copyright {
+    padding: 0 24px;
+    margin-top: 40px;
+  }
+}
