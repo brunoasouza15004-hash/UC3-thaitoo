@@ -79,7 +79,7 @@ function App() {
         <div className="about-card">
           <div className="about-content">
             <div className="about-header-block">
-              <img src={logoMarca} alt="Thaitoo Logo" className="about-logo" />
+              <img src={logoMarca2} alt="Thaitoo Logo" className="about-logo" />
               <h2>Sobre Mim</h2>
             </div>
             <p className="about-greeting">Prazer, sou a Thaina!</p>
@@ -177,7 +177,7 @@ function App() {
               {/* Lado Esquerdo: Informações, Mini-Mapa e Botão */}
               <div className="location-info">
                 <div className="location-header-block">
-                  <img src={logoMarca} alt="Thaitoo Logo" className="location-logo" />
+                  <img src={logoMarca2} alt="Thaitoo Logo" className="location-logo" />
                   <h2 className="location-title">Localização</h2>
                 </div>
                 
@@ -235,7 +235,7 @@ function App() {
           {/* Lado Esquerdo: Branding */}
           <div className="footer-brand">
             <div className="footer-logo-wrapper">
-              <img src={logoMarca} alt="Thaitoo Logo" className="footer-logo-img" />
+              <img src={logoMarca2} alt="Thaitoo Logo" className="footer-logo-img" />
               <span className="footer-brand-name">Thaitoo</span>
             </div>
             <p className="footer-slogan">Encontro nas distorções um lugar para respirar.</p>
